@@ -1,3 +1,46 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES5",
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react-native"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "checkJs": false,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "experimentalDecorators": true,
+    "allowImportingTsExtensions": false,
+    "paths": {
+      "#apis/*": ["apis/*"],
+      "#app/*": ["app/*"],
+      "#aws/*": ["aws/*"],
+      "#assets/*": ["assets/*"],
+      "#commons/*": ["commons/*"],
+      "#components/*": ["components/*"],
+      "#contexts/*": ["contexts/*"],
+      "#hooks/*": ["hooks/*"],
+      "#mocks/*": ["mocks/*"],
+      "#libs/*": ["libs/*"],
+      "#pages/*": ["pages/*"],
+      "#prisma/*": ["prisma/*"],
+      "#public/*": ["public/*"],
+      "#stores/*": ["stores/*"],
+      "#queries/*": ["queries/*"],
+      "#styles/*": ["styles/*"],
+      "#types/*": ["types/*"],
+      "#ui/*": ["ui/*"],
+      "#utils/*": ["utils/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

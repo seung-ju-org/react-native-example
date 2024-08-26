@@ -2,6 +2,10 @@
 #
 .DS_Store
 
+# Cache
+#
+.eslintcache
+
 # Xcode
 #
 build/
